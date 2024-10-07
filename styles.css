@@ -195,32 +195,34 @@ h6 {
     width: 100%;
 }
 
-#foreground img {
+#foreground svg {
     position: absolute;
     max-width: 100%;
     bottom: 0;
 }
 
-#foreground svg {
-    position: absolute;
+#foreground #foreground-ground {
+    /* position: absolute; */
     bottom: -1.8vw;
     width: 100vw;
     z-index: 10;
 }
 
 #foreground-left {
+    position: absolute;
     z-index: 100;
     left: max(-50px, -12vw); 
     width: min(500px, 55vw); 
 }
 #foreground-right {
+    position: absolute;
     z-index: 100;
     right: max(-50px, -12vw);
     width: min(500px, 60vw);
 }
 
 @media (min-width: 1600px) {
-    #foreground svg {
+    #foreground #foreground-ground {
         transition: bottom 50ms linear;
         bottom: -4vw;
     }
