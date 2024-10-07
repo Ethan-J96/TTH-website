@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./scripts/smoothScroll.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <header>
+        <div class="navbar">
+            <a id="tigerHacksLogo" href="#">
+                <img src="./assets/Tiger Hacks Logo placeholder.png" alt="Tiger Hacks Logo">
+            </a>
+            <ul class="navbar__links">
+                <li><a class="navbar_link" href="#">Join</a></li>
+                <li><a class="navbar_link" href="#schedule">Schedule</a></li>
+                <li><a class="navbar_link" href="#sponsors">Sponsors</a></li>
+                <li><a class="navbar_link" href="#faqs">FAQ</a></li>
+                <li><a class="navbar_link" href="#committee">Committee</a></li>
+            </ul>
+        </div>
+    </header> -->
+    <section id="hero" class="">
+
+        <div id="background">   
+            <svg id="sun" viewBox="0 0 1124 548" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M619.704 1.94906C752.166 -9.08946 777.253 55.5796 844.488 85.462C911.723 115.344 891.045 136.828 911.723 175.555C931.167 211.972 981.387 230.578 994.01 269.884C1035.82 400.074 1088.03 404.117 1123.97 412.229L15.5957 529.365L0.916504 415.012C40.4429 409.587 66.8711 384.18 88.6429 335.232C117.015 271.445 133.005 271.891 199.236 207.667C265.467 143.442 237.37 145.672 313.636 85.462C389.902 25.252 487.241 12.9876 619.704 1.94906Z" fill="#FABC71"/>
+                <path d="M458.14 132.837C471.171 120.928 540.506 129.01 602.2 122.369C648.31 117.407 670.873 149.395 703.998 160.488C737.122 171.58 767.187 186.873 796.32 217.702C822.728 245.647 814.48 270.194 845.491 302.999C876.502 335.804 909.551 406.977 869.214 414.948C828.876 422.92 922.761 484.633 894.663 484.633C729.641 484.633 592.177 556.377 476.703 546.85C332.362 534.942 274.516 551.356 238.43 505.707C202.345 460.057 276.033 422.33 234.013 414.729C191.043 406.956 195.328 367.904 238.43 339.126C281.532 310.347 263.977 266.808 290.038 242.991C316.1 219.174 361.287 216.698 393.916 186.426C414.128 167.673 445.109 144.745 458.14 132.837Z" fill="#FFDA89"/>
+                <path d="M428.653 406.907C415.806 344.412 481.182 283.933 557.129 283.933C640.055 283.933 687.942 342.396 687.942 394.811C687.942 447.226 643.559 505.994 578.153 504.681C477.708 502.665 441.501 469.402 428.653 406.907Z" fill="white"/>
+                <path d="M532.414 378.659C503.295 378.774 419.004 402.041 450.112 330.093L407.77 330.094L407.77 448.789L707.876 448.789C706.269 441.821 687.728 370.972 686.939 375.724C681.665 407.459 643.835 403.499 621.466 396.325C599.097 389.151 561.532 378.544 532.414 378.659Z" fill="#FFDA89"/>
+                </svg>
+                          
+            <svg id="fields" viewBox="0 0 1543 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M150.824 3.3792C107.434 5.52537 86.1801 7.14086 15.0479 19.3169L15.0479 192.095H1542.04V20.5332C1533.04 18.5406 1549.78 19.3169 1455.32 15.015C1360.86 10.7131 1249.61 1.28743 1187.86 0.549895C1106.58 -0.420759 1009.78 6.59761 980.274 7.53834C880.519 10.7183 783.099 15.2322 744.76 15.2322C634.008 15.2322 568.595 2.02674 470.628 7.53834C423.805 10.1726 345.618 2.85939 296.564 3.3792C247.51 3.89901 224.377 -0.258929 150.824 3.3792Z" fill="#FABC71"/>
+                <path d="M97.15 39.0308C39.6971 44.8289 51.9812 36.1316 0 47.7276V201.429H1533.71V59.9594C1533.71 59.9594 1233.79 68.1585 1145.36 59.9594C1056.94 51.7603 1074.37 52.5987 1010.9 51.2072C931.558 49.4677 956.181 47.7276 849.483 39.0307C742.784 30.3338 715.426 39.0307 604.624 39.0307C493.822 39.0307 496.558 27.4347 425.425 32.6527C354.293 37.8708 294.132 26.2748 227.103 32.6528C160.075 39.0307 154.603 33.2326 97.15 39.0308Z" fill="#E99B5B"/>
+                <path d="M165.48 98.5583C106.055 102.375 92.557 112.989 9.52832 110.733L9.52836 203.219H1531.72C1536.33 158.518 1542.79 62.4563 1531.72 62.4563C1517.88 62.4563 1489.14 62.4563 1432.72 58.8469C1376.31 55.2375 1035.23 56.591 970.296 62.4565C905.363 68.322 889.406 69.5385 847.338 69.5385C805.27 69.5385 763.432 74.69 722.982 75.5924C682.533 76.4948 705.029 70.5045 646.134 75.5924C591.487 80.3133 583.451 85.67 525.97 86.1212C468.489 86.5724 464.114 78.699 407.204 86.1212C350.003 93.5813 355.034 94.0464 295.424 98.5583C235.814 103.07 211.589 95.5971 165.48 98.5583Z" fill="#DE8051"/>
+            </svg>
+        </div>
+
+        <div class="hero__content">
+        <h1>TigerHacks<br>2024</h1>
+        <p><i>Event Summary</i></p>
+        <a href="" class="button-link">Sign Up Today!</a>
+        </div>
+
+        <div id="paralax-cloud-layer">
+            <div style="animation-delay: 0s;" class="cloud-wrapper">
+                <svg style="animation-delay: 0s;" id="cloud-one" xmlns="http://www.w3.org/2000/svg"  fill="none"><path fill="#fff" fill-opacity=".6" d="M30.839 73.765c37 .5 165.425-1.4 221.5-.7 56.076.7 27.406-38.11 0-38.11h-56.064c2.5-7.5 5.676-34.83-29.936-34.83H71.84C40.437.125 51.77 28.45 52.83 31.1l.01.024H30.84c-45.041 0-37 42.14 0 42.64Z"/></svg>
+            </div>
+            <div style="animation-delay: 18s;" class="cloud-wrapper">
+                <svg style="animation-delay: 18s;" id="cloud-two" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#fff" fill-opacity=".6" d="M443.255 46.004c48-4 89.5-46.5-25-46-55.667 1.167-288.7 2.3-359.5 3.5-88.5 1.5-62.5 47.5-8.5 47.5h129.5c-33 5-53 49 20 49s143.5 3 176 0c26-2.4 11.686-40.748 3-49 5.918 0 6.49-.167 64.5-5Z"/></svg>
+            </div>
+            <div style="animation-delay: 12s;" class="cloud-wrapper">
+                <svg style="animation-delay: 12s;" id="cloud-three" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#fff" fill-opacity=".6" d="M38.048 1.901c65.5-3 102.5.549 168.5 0s37 31 37 31 24.5 2.5 52 2.5c68.763 0 62.5 43.5 14.5 45.5s-167 3.5-213 2.5c-36.8-.8-40.333-23-37.5-34-59.5-1-87-44.5-21.5-47.5Z"/></svg>
+            </div>
+            <div style="animation-delay: 3s;" class="cloud-wrapper">
+                <svg style="animation-delay: 3s;" id="cloud-four" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#fff" fill-opacity=".6" d="M309.48 82.243c-65.5 3-102.5-.549-168.5 0s-37-31-37-31-24.5-2.5-52-2.5c-68.762 0-62.5-43.5-14.5-45.5s167-3.5 213-2.5c36.8.8 40.333 23 37.5 34 59.5 1 87 44.5 21.5 47.5Z"/></svg>
+            </div>
+            <div style="animation-delay: 0s;" class="cloud-wrapper">
+                <svg style="animation-delay: 0s;" id="cloud-five" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#fff" fill-opacity=".6" d="M32.99 42.681c56 1 96.999 3.24 210.999 4.5 114 1.26 77.1-46.5 19.5-46.5h-181.5c-87.5 0-105 41-49 42Z"/></svg>
+            </div>
+            <div style="animation-delay: 20s;" class="cloud-wrapper">
+                <svg style="animation-delay: 20s;" id="cloud-six" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#fff" fill-opacity=".6" d="M262.968 68.916c-37 .5-170 6-229 8s-26-36.1 0-38.5c11.5-1.061 28-4 56-6.5-2.5-7.5-5.612-31 30-31h29.5c31.403 0 20.07 28.325 19.009 30.976l-.009.024h87c88.172 0 44.5 36.5 7.5 37Z"/></svg>
+            </div>
+            <div style="animation-delay: 12s;" class="cloud-wrapper">
+                <svg style="animation-delay: 12s;" id="cloud-seven" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#fff" fill-opacity=".6" d="M32.314 4.883c56-1 97-3.24 211-4.5 114-1.26 77.1 46.5 19.5 46.5h-181.5c-87.5 0-105-41-49-42Z"/></svg>
+            </div>
+        </div>
+
+        <div id="foreground">
+            <img id="foreground-left" src="/assets/fg-left-side.png" alt="">
+            <img id="foreground-right" src="/assets/fg-right-side.png" alt="">
+            <svg viewBox="0 0 1993 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1992.48 36.2903C1000.69 -4.893 582.267 -7.7228 0 11.3591V109.958C999.438 93.686 988.703 143.584 1992.48 137.076V36.2903Z" fill="#1D201F"/>
+            </svg>
+        </div>
+
+    </section>
+
+
+    <!-- <section id="schedule" class="">
+        <h2>Schedule</h2>
+        <div class="schedule-blocks">
+
+            <div class="schedule-block">
+                <h3>Friday</h3>
+                <div class="schedule-block__time-block">
+                    <p>Time block</p></div>
+                <div class="schedule-block__time-block">
+                    <p>Time block</p></div>
+                <div class="schedule-block__time-block">
+                    <p>Time block</p></div>
+            </div>
+
+            <div class="schedule-block">
+                <h3>Saturday</h3>
+                <div class="schedule-block__time-block">
+                    <p>Time block</p></div>
+                <div class="schedule-block__time-block">
+                    <p>Time block</p></div>
+                <div class="schedule-block__time-block">
+                    <p>Time block</p></div>
+            </div>
+
+            <div class="schedule-block">
+                <h3>Sunday</h3>
+                <div class="schedule-block__time-block">
+                    <p>Time block</p></div>
+                <div class="schedule-block__time-block">
+                    <p>Time block</p></div>
+                <div class="schedule-block__time-block">
+                    <p>Time block</p></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sponsors" class="">
+        <h2>Sponsors</h2>
+         <div class="carrouselle">
+            
+            <div class="sponsor">
+                <img src="" alt="">
+            </div>
+
+            <div class="sponsor">
+                <img src="" alt="">
+            </div>
+
+            <div class="sponsor">
+                <img src="" alt="">
+            </div>
+
+         </div>
+    </section>
+
+    <section id="faqs" class="">
+        <h2>FAQ</h2>
+        <div class="question dropdown">Question</div>
+        <div class="question dropdown">Question</div>
+        <div class="question dropdown">Question</div>
+        <div class="question dropdown">Question</div>
+    </section>
+
+    <section id="committee" class="">
+        <h2>Meet Our Committee</h2>
+        <img src="" alt="">
+    </section> -->
+
+
+    
+    <!-- <footer>
+
+    </footer> -->
+</body>
+
+</html>
