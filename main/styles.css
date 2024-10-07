@@ -75,6 +75,7 @@ h6 {
 }
 .hero__content p {
     font-size: clamp(20px, 1vw, 30px);
+    margin-block: 5px;
 }
 .button-link {
     display: block;
