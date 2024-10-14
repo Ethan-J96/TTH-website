@@ -1,0 +1,30 @@
+.q_and_a {
+	display: grid;
+	border-color: black;
+	border-radius: 9px;
+	border-width: 2px;
+	border-style: solid;
+	grid-template-rows: min-content 0fr;
+	transition: grid-template-rows 500ms;
+	margin: 16px;
+}
+
+.q_and_a.selected {
+	grid-template-rows: min-content 1fr;
+}
+
+.question {
+	background-color: black;
+	color: white;
+	font-family: var(--ff-body);
+	border-radius: 6px;
+	padding: 10px;
+}
+
+.answer {
+	overflow: hidden;
+}
+
+.answer p {
+	margin: 16px;
+}
