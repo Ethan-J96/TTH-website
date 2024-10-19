@@ -12,7 +12,22 @@
 .q_and_a.selected {
 	grid-template-rows: min-content 1fr;
 }
-
+.qna_col {
+	column-count: 3;
+	column-width: 8rem
+}  
+.row {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.col {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
 .question {
 	background-color: black;
 	color: white;
