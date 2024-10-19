@@ -29,7 +29,7 @@
 	flex: 1;
 }
 .question {
-	background-color: black;
+	background-color: #de8051;
 	color: white;
 	font-family: var(--ff-body);
 	border-radius: 6px;
@@ -38,6 +38,7 @@
 
 .answer {
 	overflow: hidden;
+	background-color: white;
 }
 
 .answer p {
