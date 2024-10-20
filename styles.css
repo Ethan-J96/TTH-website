@@ -1,0 +1,265 @@
+:root {
+    --clr-background--light: #FEFBFA;
+    --clr-base-icon: #1E1E1E;
+    --ff-headings: "Chango", sans-serif;
+    --ff-body: "Red Hat Display", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-body);
+    background-color: #1d201f;
+}
+a {
+    text-decoration: none; 
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-headings);
+}
+.white_color {
+    color: white;
+}
+
+.img_sponsor_1
+ {
+    width: 200px;
+    height: auto;
+}
+.img_sponsor_2
+ {
+    width: 300px;
+    height: auto;
+}
+.center {
+    margin: auto;
+    width: 66%;
+    padding: 10px;
+}
+.button {
+    background-color: #de8051;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+/* ********************************************************************** */
+/* *****************************_COMPONENTS****************************** */
+/* ********************************************************************** */
+
+/* Nav-Bar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--clr-base-icon);
+}
+
+.navbar__links {
+    display: flex;
+    gap: clamp(10px, 2%, 2%);
+    list-style: none;
+}
+
+/* ********************************************************************** */
+/* ****************************_HERO-SECTION***************************** */
+/* ********************************************************************** */
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: inherit;
+    margin: 0;
+    padding: 0;
+    background-color: #4d1a0a;
+    overflow: hidden;
+}
+
+.hero__content {
+    /* outline: 1px solid red; */
+    text-align: center;
+    z-index: 100000;
+}
+
+.hero__content h1 {
+    font-size: clamp(43px, 5vw, 90px);
+
+}
+.hero__content p {
+    font-size: clamp(20px, 1vw, 30px);
+    margin-block: 5px;
+}
+.button-link {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 1.2rem 2rem;
+    background-color: var(--clr-base-icon);
+    border-radius: 20px 20px 20px 20px;
+    font-family: var(--ff-body);
+    font-weight: 700;
+    color: white;
+    font-size: clamp(24px, 1vw, 40px);
+}
+#paralax-cloud-layer {
+    /* border: 5px solid red; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* cloud logic */
+.cloud-wrapper {
+    /* border: 10px solid blue; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: cloud-move 24s linear infinite;
+}
+#paralax-cloud-layer svg {
+    position: absolute;
+    width: 500px;
+    opacity: 0;
+    animation: reveal-cloud 0s linear forwards;
+}
+@keyframes cloud-move {
+    from {
+        transform: translate(100%);
+    }
+    to {
+        transform: translate(-100%);
+    }
+}
+@keyframes reveal-cloud {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#cloud-one {
+    top: 6%;
+}
+#cloud-two {
+    top: 0%;
+}
+#cloud-three {
+    top: 16%;
+}
+#cloud-four {
+    top: 26%;
+}
+#cloud-five {
+    top: 36%;
+}
+#cloud-six {
+    top: 46%;
+}
+#cloud-seven {
+    top: 56%;
+}
+@media (max-width: 800px) {
+    .cloud-wrapper {
+        animation: cloud-move 12s linear infinite;
+    }
+    #cloud-two {
+        display: none;
+    }    
+    #cloud-four {
+        display: none;
+    }
+    #cloud-six {
+        display: none;
+    }
+}
+
+
+/* temporary sun background */
+#background {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#background #sun {
+    position: absolute;
+    bottom: 2vw;
+    width: 100vw;
+    max-width: 1000px;
+    right: 50%;
+    transform: translate(50%);
+}
+#background #fields{
+    position: absolute;
+    bottom: -1.5vw;
+    width: 100vw;
+}
+@media (min-width: 1900px) {
+    #background #fields {
+        transition: bottom 50ms linear;
+        bottom: -5vw;
+    }
+}
+
+/* temporary tree foreground */
+#foreground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#foreground svg {
+    position: absolute;
+    max-width: 100%;
+    bottom: 0;
+}
+
+#foreground #foreground-ground {
+    /* position: absolute; */
+    bottom: -1.8vw;
+    width: 100vw;
+    z-index: 10;
+}
+
+#foreground-left {
+    position: absolute;
+    z-index: 100;
+    left: max(-50px, -12vw); 
+    width: min(500px, 55vw); 
+}
+#foreground-right {
+    position: absolute;
+    z-index: 100;
+    right: max(-50px, -12vw);
+    width: min(500px, 60vw);
+}
+
+@media (min-width: 1600px) {
+    #foreground #foreground-ground {
+        transition: bottom 50ms linear;
+        bottom: -4vw;
+    }
+}
