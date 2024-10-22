@@ -48,11 +48,11 @@ h6 {
     width: 300px;
     height: auto;
 }
-.center {
+/*.center {
     margin: auto;
     width: 66%;
     padding: 10px;
-}
+}*/
 .button {
     background-color: #de8051;
     border: none;
@@ -64,6 +64,19 @@ h6 {
     font-size: 16px;
 }
 
+.button:hover {
+    background-color: #d9a286;
+    cursor: pointer;
+}
+
+.button.discord {
+    background-color: #5865f2;
+}
+
+
+.button.discord:hover {
+    background-color: #7983ed;
+}
 
 /* ********************************************************************** */
 /* *****************************_COMPONENTS****************************** */
@@ -124,6 +137,11 @@ h6 {
     color: white;
     font-size: clamp(24px, 1vw, 40px);
 }
+
+.button-link:hover {
+    background-color: #5c5c5c;
+}
+
 #paralax-cloud-layer {
     /* border: 5px solid red; */
     position: absolute;
@@ -262,4 +280,57 @@ h6 {
         transition: bottom 50ms linear;
         bottom: -4vw;
     }
+}
+
+
+/* ********************************************************************** */
+/* ****************************_SPONSOR-SECTION************************** */
+/* ********************************************************************** */
+
+.sponsor_class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ********************************************************************** */
+/* ****************************_PRIZES-SECTION*************************** */
+/* ********************************************************************** */
+
+.prizes {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    margin: 50px;
+}
+
+.category_prizes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.prize {
+    flex-basis: 0px;
+    flex-grow: 1;
+    min-width: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prize img {
+    width: 50%;
+    height: auto;
+}
+
+/* ********************************************************************** */
+/* ****************************_PRIZES-SECTION*************************** */
+/* ********************************************************************** */
+
+.rubrics {
+    margin: 10%;
 }
