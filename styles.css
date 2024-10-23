@@ -48,11 +48,44 @@ h6 {
     width: 300px;
     height: auto;
 }
-/*.center {
-    margin: auto;
-    width: 66%;
-    padding: 10px;
-}*/
+
+/* ********************************************************************** */
+/* *****************************_COMPONENTS****************************** */
+/* ********************************************************************** */
+
+/* Nav-Bar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--clr-base-icon);
+}
+
+.navbar__links {
+    display: flex;
+    gap: clamp(10px, 2%, 2%);
+    list-style: none;
+}
+
+.mobile_navbar {
+    display: none;
+    background-color: var(--clr-base-icon);
+}
+
+.mobile_navbar_dropdown {
+}
+
+.mobile_navbar__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    list-style: none;
+    padding: 0px 40px;
+}
+
+.mobile_navbar__links .button {
+    width: 100%;
+}
+
 .button {
     background-color: #de8051;
     border: none;
@@ -73,26 +106,22 @@ h6 {
     background-color: #5865f2;
 }
 
-
 .button.discord:hover {
     background-color: #7983ed;
 }
 
-/* ********************************************************************** */
-/* *****************************_COMPONENTS****************************** */
-/* ********************************************************************** */
-
-/* Nav-Bar */
-.navbar {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--clr-base-icon);
+.mobile_navbar__links li:nth-child(even) a .button {
+    background-color: #ef9567;
 }
 
-.navbar__links {
-    display: flex;
-    gap: clamp(10px, 2%, 2%);
-    list-style: none;
+@media (max-width: 1000px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile_navbar {
+        display: inline;
+    }
 }
 
 /* ********************************************************************** */
@@ -114,7 +143,7 @@ h6 {
 .hero__content {
     /* outline: 1px solid red; */
     text-align: center;
-    z-index: 100000;
+    z-index: 9999; /* These are some real z-inflation hours... */
 }
 
 .hero__content h1 {
@@ -296,6 +325,53 @@ h6 {
 }
 
 /* ********************************************************************** */
+/* ****************************_FAQ-SECTION****************************** */
+/* ********************************************************************** */
+
+.faq_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.q_and_a {
+    display: grid;
+    grid-template-rows: min-content 0fr;
+    transition: grid-template-rows 500ms;
+    margin: 16px;
+    align-self: start;
+}
+
+.question:hover {
+    cursor: pointer;
+}
+
+.q_and_a.selected {
+    grid-template-rows: min-content 1fr;
+}
+
+.question {
+    background-color: #de8051;
+    color: white;
+    font-family: var(--ff-body);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.answer {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.answer p {
+    margin: 16px;
+}
+
+.answer p a:hover {
+    text-decoration: underline;
+}
+
+/* ********************************************************************** */
 /* ****************************_PRIZES-SECTION*************************** */
 /* ********************************************************************** */
 
@@ -323,7 +399,7 @@ h6 {
 }
 
 .prize img {
-    width: 50%;
+    width: 75%;
     height: auto;
 }
 
