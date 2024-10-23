@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="faq.css">
     <script src="scripts/faq.js" defer></script>
     <script type="module" src="scripts/main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +24,7 @@
                 alt="Tiger Hacks Logo">
         </a>
         <ul class="navbar__links">
-            <li><a class="navbar_link" href="https://discord.gg/7YaNaCgQMz"><button class="button">Discord</button></a>
+            <li><a class="navbar_link" href="https://discord.gg/7YaNaCgQMz"><button class="button discord">Discord</button></a>
             </li>
             <li><a class="navbar_link" href="#schedule"><button class="button">Schedule</button></a></li>
             <li><a class="navbar_link" href="#sponsors"><button class="button">Sponsors</button></a></li>
@@ -36,6 +35,23 @@
 
             <!-- <li><a class="navbar_link" href="#committee">Committee</a></li> -->
         </ul>
+    </div>
+    <div class="mobile_navbar">
+        <div class="mobile_navbar_hamburger"></div>
+        <div class="mobile_navbar_dropdown">
+        <ul class="mobile_navbar__links">
+            <li><a class="navbar_link" href="https://discord.gg/7YaNaCgQMz"><button class="button discord">Discord</button></a>
+            </li>
+            <li><a class="navbar_link" href="#schedule"><button class="button">Schedule</button></a></li>
+            <li><a class="navbar_link" href="#sponsors"><button class="button">Sponsors</button></a></li>
+            <li><a class="navbar_link" href="#faq"><button class="button">FAQ</button></a></li>
+            <li><a class="navbar_link" href="#prizes"><button class="button">Prizes</button></a></li>
+            <li><a class="navbar_link" href="#rubrics"><button class="button">Rubrics</button></a></li>
+
+
+            <!-- <li><a class="navbar_link" href="#committee">Committee</a></li> -->
+        </ul>
+        </div>
     </div>
 </header>
 <section id="hero" class="">
@@ -227,34 +243,22 @@
 <section id="sponsors" class="">
     <div class="center">
         <h2 style="text-align: center; padding-bottom: 10px;" class="white_color">Seed Sponsors</h2>
-        <div class="row" id="bronze_sponsors">
-            <div class="sponsor col">
+        <div class="sponsor_class" id="bronze_sponsors">
                 <img class="img_sponsor_1" src="assets/sponsors/everygy_color_whiteBg.png" alt="Evergy Logo">
-            </div>
-            <div class="sponsor col">
                 <img class="img_sponsor_1" src="assets/sponsors/Garmin logo.png" alt="Garmin Logo">
-            </div>
-            <div class="sponsor col">
                 <img class="img_sponsor_1" src="assets/sponsors/RSM_Logo_White_TransparentBG.png" alt="RSM Logo">
-            </div>
-            <div class="sponsor col">
                 <img class="img_sponsor_1" src="assets/sponsors/tradebot_color_whiteBg.png" alt="Tradebot Logo">
-            </div>
-            <div class="sponsor col">
                 <img class="img_sponsor_1" src="assets/sponsors/VUHL_Vertical_Logo_White_Transparent_BG.png"
                     alt="Veterans United Home Loans Logo">
-            </div>
         </div>
+        <br>
+
         <h2 style="text-align: center; padding-bottom: 10px;" class="white_color">Sprout Sponsors</h2>
-        <div class="row" id="silver_sponsors">
-            <div class="sponsor col">
-                <img class="img_sponsor_2 center" src="assets/sponsors/Shelter_Regular.png"
-                    alt="Shelter Insurance Logo">
-            </div>
-            <div class="sponsor col">
-                <img class="img_sponsor_2 center" src="assets/sponsors/hrblockhorizontal_color_whiteBg.png"
-                    alt="H&R Block Logo">
-            </div>
+        <div class="sponsor_class" id="silver_sponsors">
+            <img class="img_sponsor_2 center" src="assets/sponsors/Shelter_Regular.png"
+                alt="Shelter Insurance Logo">
+            <img class="img_sponsor_2 center" src="assets/sponsors/hrblockhorizontal_color_whiteBg.png"
+                alt="H&R Block Logo">
         </div>
     </div>
     <hr width="75%">
@@ -262,8 +266,8 @@
 <section id="faq">
     <h1 style="text-align: center; padding-bottom: 10px;" class="white_color">Frequently Asked Questions</h2>
 
-        <div class="row">
-            <div class="q_and_a col">
+        <div class="faq_container">
+            <div class="q_and_a">
                 <div class="question"><b>Who is allowed to participate in TigerHacks?</b></div>
                 <div class="answer">
                     <p>
@@ -273,7 +277,7 @@
                 </div>
             </div>
 
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>What should I bring to TigerHacks? </b></div>
                 <div class="answer">
                     <p>
@@ -281,9 +285,7 @@
                         toothpaste, and a toothbrush. And bring copies of your resume for the career fair! </p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>What is at TigerHacks? </b></div>
                 <div class="answer">
                     <p>
@@ -292,32 +294,29 @@
                 </div>
             </div>
 
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>Are there career opportunities?</b></div>
                 <div class="answer">
                     <p>
                         Yep! We will be holding a career fair, so make sure to bring copies of your resume! </p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>I have dietary restrictions. Will there be accommodations?</b></div>
                 <div class="answer">
                     <p>
                         Yes! When you register, let us know and we will have food options available for you!
+                    </p>
                 </div>
             </div>
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>Will there be places to sleep? </b></div>
                 <div class="answer">
                     <p>
                         We have 10-15 mattresses available, for those who are traveling to Mizzou! </p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>What is the maximum and minimum team size? Who can be on the team? </b></div>
                 <div class="answer">
                     <p>
@@ -325,25 +324,25 @@
                         have fewer than 4 members. </p>
                 </div>
             </div>
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>I’m a beginner! Can I still come?</b></div>
                 <div class="answer">
                     <p>
                         Of course! We have a beginner category just for people like you!
+                    </p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>What is the difference between Beginner and Developer?</b></div>
                 <div class="answer">
                     <p>
                         The Beginner category is open to freshman/sophomore students in CS/IT and those in non-computing
                         majors. When you register, we ask for your skill level and resume. If our team feels that your
-                        situation does not merit Beginner, we'll reach out! </p>
+                        situation does not merit Beginner, we'll reach out!
+                    </p>
                 </div>
             </div>
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>Am I required to be at TigerHacks the whole time? Can I attend virtually?</b>
                 </div>
                 <div class="answer">
@@ -351,42 +350,43 @@
                         You can leave the TigerHacks buildings at any time! But there is no virtual option, so you must
                         check in on Friday in Lafferre and at least one member of your team must be present at closing
                         ceremony if you want to collect your prizes.
+                    </p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>Are we allowed to use ChatGPT?</b></div>
                 <div class="answer">
                     <p>
                         If you use ChatGPT or other AI tools, make sure to declare this when submitting your project.
                         Failing to do so will result in your disqualification.
+                    </p>
                 </div>
             </div>
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>How can I improve my score?</b></div>
                 <div class="answer">
                     <p>
-                        Make sure to take a look at the <a>rubrics</a> for the categories you’re submitting to! Also,
+                        Make sure to take a look at the <a href="#rubrics">rubrics</a> for the categories you’re submitting to! Also,
                         make sure to have a mentor for your project. Mentors are people associated with TigerHacks who
                         help you with your project. They can be a sponsor, a volunteer, or even a member of the planning
                         committee!
+                    </p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>Can I submit my project to multiple categories?</b></div>
                 <div class="answer">
                     <p>
                         Yes, but you cannot submit to both developer and beginner.
+                    </p>
                 </div>
             </div>
-            <div class="q_and_a col">
+            <div class="q_and_a">
                 <div class="question"><b>I have a question that isn’t on here.</b></div>
                 <div class="answer">
                     <p>
-                        Feel free to send us a message on our <a>Discord</a>!
+                        Feel free to send us a message on our <a href="https://discord.gg/7YaNaCgQMz">Discord</a>!
+                    </p>
                 </div>
             </div>
         </div>
@@ -408,10 +408,10 @@
 
 </section>
 <section id="prizes">
-    <h1 style="text-align: center; padding-bottom: 10px;" class="white_color">Prizes</h2>
-        <div class="center">
-            <div style="padding-bottom: 40px;" class="row">
-                <div class="col">
+    <h1 style="text-align: center; padding-bottom: 10px;" class="white_color">Prizes</h1>
+        <div class="prizes">
+            <div class="category_prizes">
+                <div class="prize">
                     <img style="margin: auto; padding-bottom: 20px;" class="img_sponsor_1"
                         src="assets/prizes/prepaid_card_transparent.png"
                         alt="A picture of a pre-paid card, representing $500">
@@ -419,14 +419,14 @@
                     <p style="margin: auto;" class="white_color">1st Place Developer</p>
 
                 </div>
-                <div class="col">
+                <div class="prize">
                     <img style="margin: auto; padding-bottom: 20px;" class="img_sponsor_1"
                         src="assets/prizes/apple_watch_transparent.png" alt="A picture of an Apple Watch Series 10. ">
                     <p style="margin: auto;" class="white_color">Apple Watch Series 10</p>
                     <p style="margin: auto;" class="white_color">2nd Place Developer</p>
 
                 </div>
-                <div class="col">
+                <div class="prize">
                     <img style="margin: auto; padding-bottom: 20px;" class="img_sponsor_1"
                         src="assets/prizes/tv_transparent.png" alt="A picture of a 4K TCL branded TV set.">
                     <p style="margin: auto;" class="white_color">TCL 55-Inch 4K TV</p>
@@ -434,15 +434,16 @@
                 </div>
 
             </div>
-            <div style="padding-bottom: 40px;" class="row">
-                <div class="col">
+            <div class="category_prizes">
+                <div class="prize">
                     <img style="margin: auto; padding-bottom: 20px;" class="img_sponsor_1"
                         src="assets/prizes/ipad_transparent.png" alt="A picture of an Apple iPad 9th Gen.">
                     <p style="margin: auto;" class="white_color">iPad 9th Gen</p>
                     <p style="margin: auto;" class="white_color">1st Place Beginner</p>
 
                 </div>
-                <div class="col">
+                <div class="prize"></div>
+                <div class="prize">
                     <img style="margin: auto; padding-bottom: 20px;" class="img_sponsor_1"
                         src="assets/prizes/lego_cat_transparent.png" alt="A picture of an Apple Watch Series 10. ">
                     <p style="margin: auto;" class="white_color">LEGO Tuxedo Cat</p>
@@ -452,15 +453,16 @@
 
 
             </div>
-            <div style="padding-bottom: 40px;" class="row">
-                <div class="col">
+            <div class="category_prizes">
+                <div class="prize">
                     <img style="margin: auto; padding-bottom: 20px;" class="img_sponsor_1"
                         src="assets/prizes/ssd_transparent.png" alt="A picture of a Samsung 990 EVO 2TB NVMe SSD.">
                     <p style="margin: auto;" class="white_color">Samsung 990 EVO 2TB NVMe SSD</p>
                     <p style="margin: auto;" class="white_color">1st Place Game Development</p>
 
                 </div>
-                <div class="col">
+                <div class="prize"></div>
+                <div class="prize">
                     <img style="margin: auto; padding-bottom: 20px;" class="img_sponsor_1"
                         src="assets/prizes/steam_transparent.png" alt="A picture of a Steam $100 gift card. ">
                     <p style="margin: auto;" class="white_color">Steam $100 Gift Card</p>
@@ -469,15 +471,16 @@
                 </div>
 
             </div>
-            <div style="padding-bottom: 40px;" class="row">
-                <div class="col">
+            <div class="category_prizes">
+                <div class="prize"></div>
+                <div class="prize">
                     <img style="margin: auto; padding-bottom: 20px;" class="img_sponsor_1"
                         src="assets/prizes/pi5_transparent.png" alt="A picture of a Raspberry Pi 5 8GB">
                     <p style="margin: auto;" class="white_color">Raspberry Pi 5 8GB</p>
                     <p style="margin: auto;" class="white_color">1st Place Hardware</p>
 
                 </div>
-
+                <div class="prize"></div>
 
             </div>
         </div>
@@ -489,7 +492,7 @@
        
 </section>
 <section id="rubrics">
-    <div class="center" style="text-align: center;  padding: 0%; justify-content: center; ">
+    <div class="rubrics">
         <h1 style="text-align: center; padding-bottom: 10px;" class="white_color">Rubrics</h2>
             <p> <embed src="assets/docs/rubrics_all.pdf" width="100%" height="1000px" /></p>
     </div>

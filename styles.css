@@ -48,22 +48,6 @@ h6 {
     width: 300px;
     height: auto;
 }
-.center {
-    margin: auto;
-    width: 66%;
-    padding: 10px;
-}
-.button {
-    background-color: #de8051;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
 
 /* ********************************************************************** */
 /* *****************************_COMPONENTS****************************** */
@@ -80,6 +64,64 @@ h6 {
     display: flex;
     gap: clamp(10px, 2%, 2%);
     list-style: none;
+}
+
+.mobile_navbar {
+    display: none;
+    background-color: var(--clr-base-icon);
+}
+
+.mobile_navbar_dropdown {
+}
+
+.mobile_navbar__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    list-style: none;
+    padding: 0px 40px;
+}
+
+.mobile_navbar__links .button {
+    width: 100%;
+}
+
+.button {
+    background-color: #de8051;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #d9a286;
+    cursor: pointer;
+}
+
+.button.discord {
+    background-color: #5865f2;
+}
+
+.button.discord:hover {
+    background-color: #7983ed;
+}
+
+.mobile_navbar__links li:nth-child(even) a .button {
+    background-color: #ef9567;
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile_navbar {
+        display: inline;
+    }
 }
 
 /* ********************************************************************** */
@@ -101,7 +143,7 @@ h6 {
 .hero__content {
     /* outline: 1px solid red; */
     text-align: center;
-    z-index: 100000;
+    z-index: 9999; /* These are some real z-inflation hours... */
 }
 
 .hero__content h1 {
@@ -124,6 +166,11 @@ h6 {
     color: white;
     font-size: clamp(24px, 1vw, 40px);
 }
+
+.button-link:hover {
+    background-color: #5c5c5c;
+}
+
 #paralax-cloud-layer {
     /* border: 5px solid red; */
     position: absolute;
@@ -262,4 +309,104 @@ h6 {
         transition: bottom 50ms linear;
         bottom: -4vw;
     }
+}
+
+
+/* ********************************************************************** */
+/* ****************************_SPONSOR-SECTION************************** */
+/* ********************************************************************** */
+
+.sponsor_class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ********************************************************************** */
+/* ****************************_FAQ-SECTION****************************** */
+/* ********************************************************************** */
+
+.faq_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.q_and_a {
+    display: grid;
+    grid-template-rows: min-content 0fr;
+    transition: grid-template-rows 500ms;
+    margin: 16px;
+    align-self: start;
+}
+
+.question:hover {
+    cursor: pointer;
+}
+
+.q_and_a.selected {
+    grid-template-rows: min-content 1fr;
+}
+
+.question {
+    background-color: #de8051;
+    color: white;
+    font-family: var(--ff-body);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.answer {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.answer p {
+    margin: 16px;
+}
+
+.answer p a:hover {
+    text-decoration: underline;
+}
+
+/* ********************************************************************** */
+/* ****************************_PRIZES-SECTION*************************** */
+/* ********************************************************************** */
+
+.prizes {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    margin: 50px;
+}
+
+.category_prizes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.prize {
+    flex-basis: 0px;
+    flex-grow: 1;
+    min-width: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prize img {
+    width: 75%;
+    height: auto;
+}
+
+/* ********************************************************************** */
+/* ****************************_PRIZES-SECTION*************************** */
+/* ********************************************************************** */
+
+.rubrics {
+    margin: 10%;
 }
