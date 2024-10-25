@@ -406,7 +406,7 @@ section {
     position: absolute;
     bottom: -11vw;  /* Changed from 2vw to -10vw to lower the sun */
     width: 100vw;
-    max-width: 1000px;
+    max-width: 750px;
     right: 50%;
     transform: translate(50%);
 }
